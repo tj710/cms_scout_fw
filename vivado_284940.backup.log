@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 14 15:24:28 2020
+# Process ID: 284940
+# Current directory: /home/tjames/StreamLoopback128/firmware
+# Command line: vivado -log SB852_VU9P_StreamLoopback128/vivado.log -journal SB852_VU9P_StreamLoopback128/vivado.jou -mode batch -source /usr/src/picocomputing-6.2.0.29/bin/build_xilinx.tcl -tclargs project_only
+# Log file: /home/tjames/StreamLoopback128/firmware/SB852_VU9P_StreamLoopback128/vivado.log
+# Journal file: /home/tjames/StreamLoopback128/firmware/SB852_VU9P_StreamLoopback128/vivado.jou
+#-----------------------------------------------------------
+source /usr/src/picocomputing-6.2.0.29/bin/build_xilinx.tcl
+# proc is_empty {string} {
+#     expr {![binary scan $string c c]}
+# }
+# proc not_empty {string} {
+#     expr {![is_empty $string]}
+# }
+# proc regenerate_ip {ip_file {elf_file ""}} {
+#     puts "Regenerate IP $ip_file"
+# 
+#     set dcp_file [file rootname $ip_file].dcp
+#     set  ip_name [file tail [file rootname $ip_file]]
+#     set ext_name [file extension $ip_file]
+# 
+#     create_fileset -blockset $ip_name
+#     move_files -fileset $ip_name $ip_file
+# #     if { [not_empty $elf_file] } {
+# #       move_files -fileset $ip_name [get_files $elf_file]
+# #       set_property SCOPED_TO_REF $ip_name [get_files $elf_file]
+# #       set_property SCOPED_TO_CELLS { $ip_name/microblaze_0 } [get_files $elf_file]
+# # 
+# #     }
+#     reset_target all $ip_file
+#     generate_target all $ip_file -force
+# 
+#     create_project -in_memory -part $::env(FPGA_PART)
+#     set_property target_language Verilog [current_project]
+#     set_property default_lib xil_defaultlib [current_project]
+# 
+#     # check ip file type, bd file or xci/xco file
+#     if { [string match $ext_name .bd] } {
+#       read_bd $ip_file
+#     } else {
+#       read_ip $ip_file
+#     }
+#     set_property is_locked true [get_files $ip_file]
+# 
+#     set dont_touch "dont_touch.xdc"
+#     set file_id [open $dont_touch "w"]
+#     puts $file_id "set_property DONT_TOUCH TRUE \[get_cells U0\]"
+#     close $file_id
+#     read_xdc $dont_touch
+#     set_property used_in_implementation false [get_files $dont_touch]
+# 
+#     synth_design -top $ip_name -part $::env(FPGA_PART) -mode out_of_context
+# 
+#     rename_ref -prefix_all $ip_name
+#     write_checkpoint -force -noxdef $dcp_file
+#     report_utilization -file ${ip_name}_utilization_synth.rpt -pb ${ip_name}_utilization_synth.pb
+#     close_project
+#     add_files $dcp_file
+# }
+# set option 0
+# if { $argc < 1 } {
+#     set option 0
+# } elseif {[lindex $argv 0] == "build_all"} {
+#     set option 0
+# } elseif {[lindex $argv 0] == "project_only"} {
+#     set option 1
+# }
+# set elf_files [regexp -all -inline {\S+} $::env(ELF_FILES)]
+# set verilog_files [regexp -all -inline {\S+} $::env(VERILOG_FILES)]
+# set exe_tcl_files [regexp -all -inline {\S+} $::env(EXE_TCL_FILES)]
+# set system_verilog_files [regexp -all -inline {\S+} $::env(SYSTEM_VERILOG_FILES)]
+# set verilog_header_files [regexp -all -inline {\S+} $::env(VERILOG_HEADER_FILES)]
+# set vhdl_files [regexp -all -inline {\S+} $::env(VHDL_FILES)]
+# set xdc_files [regexp -all -inline {\S+} $::env(DESIGN_CONSTRAINT_FILES)]
+# set xco_files [regexp -all -inline {\S+} $::env(IP_CORE_FILES)]
+# set inc_paths [regexp -all -inline {\S+} $::env(SEARCH_PATH)]
+# puts "Setting up Vivado project."
+Setting up Vivado project.
+# cd $::env(BUILD_DIR)
+# create_project -force -part $::env(FPGA_PART) $::env(PROJECT_NAME) .
+# set_property target_language Verilog [current_project]
+# if {[llength $verilog_header_files] > 0} {
+#     add_files -fileset sources_1 $verilog_header_files
+#     set_property file_type "Verilog Header" [get_files $verilog_header_files]
+# }
+# if {[llength $system_verilog_files] > 0} {
+#     add_files -fileset sources_1 $system_verilog_files
+#     set_property file_type "SystemVerilog" [get_files $system_verilog_files]
+# }
+# if {[llength $verilog_files] > 0} {
+#     add_files -fileset sources_1 $verilog_files
+#     set_property file_type "Verilog" [get_files $verilog_files]
+# }
+# if {[llength $vhdl_files] > 0} {
+#     add_files -fileset sources_1 $vhdl_files
+#     set_property file_type "VHDL" [get_files $vhdl_files]
+# }
+# if {[llength $exe_tcl_files] > 0} {
+#     puts $::env(EXE_TCL_FILES)
+#     puts $exe_tcl_files
+#     source $exe_tcl_files 
+# }
+# if {[llength $elf_files ] > 0} {
+#     add_files -norecurse $elf_files
+#     set_property SCOPED_TO_REF hmc_mb [get_files $elf_files]
+#     set_property SCOPED_TO_CELLS { microblaze_0 } [get_files $elf_files]
+# }
+# puts "Importing IP may take a few minutes" 
+Importing IP may take a few minutes
+# if {[llength $xco_files] > 0} {
+#     #add_files -fileset sources_1 $xco_files
+#     import_ip $xco_files
+#     # upgrade_ip [get_ips *]
+#     # convert_ips will create xcix core container file
+#     # convert_ip [get_ips]
+#     #set_property file_type "IP" [get_files $xco_files]
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/opt/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'pcie3_uscale_plus_x8' is locked:
+* IP definition 'UltraScale+ PCI Express Integrated Block (1.3)' for IP 'pcie3_uscale_plus_x8' (customized with software release 2017.3.1) has a different revision in the IP Catalog.
+import_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1634.707 ; gain = 43.688 ; free physical = 83174 ; free virtual = 92461
+# if {[llength $xdc_files] > 0} {
+#     add_files -fileset constrs_1 $xdc_files
+# }
+# set_property "top" $::env(TOP_ENTITY) [get_filesets sources_1]
+# if {[llength [get_ips -quiet *]] > 0} {
+#     upgrade_ip [get_ips *]
+# }
+Upgrading 'pcie3_uscale_plus_x8'
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2L-e
+xit::create_sub_core: Time (s): cpu = 00:00:15 ; elapsed = 00:00:49 . Memory (MB): peak = 2635.672 ; gain = 920.727 ; free physical = 82226 ; free virtual = 91523
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF3_SUBSYSTEM_VENDOR_ID' from '19DE' to '10EE' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF2_SUBSYSTEM_VENDOR_ID' from '19DE' to '10EE' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF1_SUBSYSTEM_VENDOR_ID' from '19DE' to '10EE' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'axisten_if_enable_msg_route' from '00000' to '2FFFF' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF0_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF3_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF1_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie3_uscale_plus_x8'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PF2_MSIX_CAP_TABLE_SIZE' from '0' to '000' has been ignored for IP 'pcie3_uscale_plus_x8'
+INFO: [IP_Flow 19-3422] Upgraded pcie3_uscale_plus_x8 (UltraScale+ PCI Express Integrated Block 1.3) from revision 0 to revision 6
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pcie3_uscale_plus_x8'...
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'pcie3_uscale_plus_x8' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+upgrade_ip: Time (s): cpu = 00:00:26 ; elapsed = 00:01:01 . Memory (MB): peak = 2635.672 ; gain = 1000.965 ; free physical = 82224 ; free virtual = 91524
+# if {$option == 1} {
+#     close_project
+#     exit 0
+# }
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 14 15:25:51 2020...

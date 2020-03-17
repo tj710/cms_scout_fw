@@ -1,0 +1,2 @@
+fifo_generator_0.v,verilog,xil_defaultlib,../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

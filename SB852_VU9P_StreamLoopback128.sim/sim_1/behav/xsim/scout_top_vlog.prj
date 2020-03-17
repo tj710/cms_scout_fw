@@ -1,0 +1,107 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/pcie3_uscale_plus_x8/pcie3_uscale_plus_x8_sim_netlist.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gtye4_channel.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtye4_channel_wrapper.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_v1_7_gtye4_common.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtye4_common_wrapper.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtwizard_gtye4.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0_gtwizard_top.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0/sim/gtwizard_ultrascale_0.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/aligner_fifo/sim/aligner_fifo.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/fifo_generator_2/sim/fifo_generator_2.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/ip/gtwizard_ultrascale_0_vio_0/sim/gtwizard_ultrascale_0_vio_0.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/CardInfo32.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/CounterClkGen.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PCIeHdrAlignSplit.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PIO_128_RX_ENGINE.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PIO_128_TX_ENGINE.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PIO_EP.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PIO_Reorder.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoFramework.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoStreamIn.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoStreamOut.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/Stream2PicoBus.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/flash/StreamToFlashCtl.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/StreamToPicoBus.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/StreamWidthConversion.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/SystemMonitor32.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/TagFIFO.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/TestCounter32.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/count_updater.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/dpram.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/fsync.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/generic_fifo.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_bit_sync.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_checking_8b10b.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_init.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_reset_sync.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_stimulus_8b10b.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_top.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gt_ultrascale_custom_top.v" \
+"../../../../../gtwizard_ultrascale_0_ex/imports/gtwizard_ultrascale_0_example_wrapper.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_prbs_any.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/gtwizard_ultrascale_0/gtwizard_ultrascale_0_stub.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0_stub.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/flash/i2c_master.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/flash/mgmt_qspi_flash_ctl.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/xilinx/src/pcie3_7x_to_v1_6.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/pcie_app_v6.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/flash/sdpram.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/sync1.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/sync2r.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/xilinx/src/xilinx_pcie_3_0_7vx.v" \
+
+sv xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/UserWrapper.sv" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/Pico_Toplevel.sv" \
+
+verilog xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_bit_sync.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_checking_8b10b.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_init.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_reset_sync.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_stimulus_8b10b.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_wrapper.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/StreamLoopback128.v" \
+
+sv xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/PicoInterfaces.sv" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/UtilFunc.sv" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/axilite_to_picobus.sv" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/xilinx/src/XilinxInterfaces.sv" \
+
+verilog xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/AXIToHMC.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/AXIToHMCWrapper.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/sync2.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/HMCReorder.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/HMCTagManager.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/Reorder.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoAXIDownsizer.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoAXIUpsizer.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoStreamToAXI.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/PicoStreamToHMC.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/StreamAXICtrl.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/RGBBlink.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/fifo_512x128.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi/asyncFifoBRAM.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/xilinx/src/FIFO.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/imports/gtwizard_ultrascale_0_example_top_sim.v" \
+
+sv xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/new/async_data_mmrs_axi_interface.sv" \
+
+verilog xil_defaultlib  --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware/src/pcie_axi" --include "../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/firmware/SB852_VU9P_StreamLoopback128/firmware" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/gtwizard_ultrascale_0/gtwizard_ultrascale_0_sim_netlist.v" \
+"../../../../SB852_VU9P_StreamLoopback128.srcs/sources_1/imports/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0_sim_netlist.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
