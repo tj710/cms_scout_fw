@@ -1,5 +1,4 @@
-# cms_scout_fw
-TJames CMS scouting firmware repo
+# TJames CMS scouting firmware repo
 
 
 Summary of components:
