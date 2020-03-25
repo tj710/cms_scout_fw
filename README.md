@@ -18,3 +18,6 @@ scout_top // UserModule, top level for scouting project - 2x picostream_64 out, 
   zero_suppression // removes packets with no muons
   
   fifo_filler // fill AXI FIFOs 
+
+
+Most of the custom firmware can be found in: cms_scout_fw/SB852_VU9P_StreamLoopback128.srcs/sources_1/new/
